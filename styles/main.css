@@ -184,3 +184,68 @@ a:hover{
 .mail_icon:hover , .github_icon:hover , .rss_icon:hover , .linkedin_icon:hover , .instagram_icon:hover{
     fill: #8abeb7; /* Change the fill color on hover */
 }
+
+/* Contact Form Styling */
+.form_p{    
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.label_form {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1em;
+    color: #333;
+}
+
+.label_form span {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background-color: #8abeb7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #add1cc;
+}
