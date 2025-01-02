@@ -43,7 +43,7 @@ main{
     font-size: 1rem;
 }
 
-.in_header, .terminal_section, .in_footer{
+.in_header, .terminal_section, .in_footer, .blog_menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ main{
     max-width: 100%;
 }
 
-.in_menu, .footer_social_menu{
+.in_menu, .footer_social_menu, .blog_menu{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -62,12 +62,12 @@ main{
     list-style: none;
 }
 
-.in_menu a, .in_header a, .in_footer a, .footer_social_menu a{
+.in_menu a, .in_header a, .in_footer a, .footer_social_menu a, .blog_menu a{
     color: #222;
     text-decoration: none;
 }
 
-.in_menu li, .footer_social_menu li{
+.in_menu li, .footer_social_menu li, .blog_menu{
     padding: 0 8px;
 }
 
@@ -101,6 +101,33 @@ a:hover{
     transition: fill 0.3s ease; /* Smooth transition */
 }
 
-.mail_icon:hover , .github_icon:hover , .rss_icon:hover , .linkedin_icon:hover , .instagram_icon:hover , .catehories_icon:hover{
+.mail_icon:hover , .github_icon:hover , .rss_icon:hover , .linkedin_icon:hover , .instagram_icon:hover , .categories_icon:hover{
     fill: #8abeb7; /* Change the fill color on hover */
+}
+
+hr {
+    border: none;            /* Removes the default border style */
+    height: 2px;             /* Sets the thickness */
+    background-color: #add1cc; /* Sets the color */
+    margin: 5px 0;          /* Adds vertical spacing */
+    width: 80%;              /* Controls the width */
+    border-radius: 5px;      /* Makes the edges rounded (optional) */
+}
+
+h1 {
+    align-items: left;
+    text-align: left;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+h2 {
+    align-items: left;
+    text-align: left;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
+    padding-bottom: 5px;
 }
