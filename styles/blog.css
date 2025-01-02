@@ -1,0 +1,106 @@
+html, body {
+    height: 100%; /* Ensure the page fills the viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange header, content, and footer in a column */
+}
+
+html{
+    line-height: 1.5;
+    letter-spacing: .06em;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    background-color: #fff;
+    color: #222;
+    font-family: Inter, sans-serif;
+}
+
+header, .footer{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    font-family: monospace;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.header, .footer{
+    background-color: #fafafa;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.in_header, .terminal_section, .in_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%;
+}
+
+.in_menu, .footer_social_menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.in_menu a, .in_header a, .in_footer a, .footer_social_menu a{
+    color: #222;
+    text-decoration: none;
+}
+
+.in_menu li, .footer_social_menu li{
+    padding: 0 8px;
+}
+
+a:hover{
+    color: #8abeb7;
+}
+
+.rights_reserved{
+    font-size: 0.8em;
+}
+
+.intro{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: rgba(138, 190, 183, 0.4); /* 50% transparent color */
+    text-decoration-style: solid;
+    text-decoration-thickness: 6px;
+    text-underline-position: under; /* Ensures underline affects letters */
+}
+
+.mail_icon , .github_icon , .rss_icon, .linkedin_icon , .instagram_icon , .categories_icon{
+    fill: #222; /* Set the initial fill color */
+    transition: fill 0.3s ease; /* Smooth transition */
+}
+
+.mail_icon:hover , .github_icon:hover , .rss_icon:hover , .linkedin_icon:hover , .instagram_icon:hover , .catehories_icon:hover{
+    fill: #8abeb7; /* Change the fill color on hover */
+}
