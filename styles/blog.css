@@ -72,6 +72,10 @@ main{
     padding: 0 8px;
 }
 
+a{
+    color:#333;
+}
+
 a:hover{
     color: #8abeb7;
 }
@@ -117,7 +121,7 @@ a:hover{
     padding-top: 6px;
     margin-right: 1.8em;
     font-size: 1.6em;
-    opacity: .6;
+    opacity: .7;
 }
 
 .posts_list {
@@ -128,7 +132,7 @@ a:hover{
 }
 
 .posts .post_item {
-    border-bottom: 1px grey dashed;
+    border-bottom: 1px #bcbcbc dotted;
 }
 
 li {
