@@ -176,7 +176,7 @@ li {
 .sub_menu_timeline svg, .sub_menu_timeline{
     fill:#333;
     color: #333;
-    opacity: .;
+    opacity: .9;
 }
 
 .sub_menu_timeline:hover, .sub_menu_category:hover {
