@@ -176,7 +176,7 @@ li {
 .sub_menu_timeline svg, .sub_menu_timeline{
     fill:#333;
     color: #333;
-    opacity: .7;
+    opacity: .;
 }
 
 .sub_menu_timeline:hover, .sub_menu_category:hover {
@@ -185,4 +185,49 @@ li {
 
 .sub_menu_timeline:hover svg, .sub_menu_category:hover svg {
     fill: #8abeb7; /* Change icon color on hover */
+}
+
+/* specific to categories page */
+
+/* Hide the checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Style for the toggle label with arrow */
+.toggle-label {
+    /* font-family: monospace; */
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0.8;
+}
+
+/* Style for arrow */
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Style for the content */
+.category_toggle {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+}
+
+/* When the checkbox is checked, show the content and rotate the arrow */
+.toggle-checkbox:checked ~ .category_toggle {
+    display: block;
+}
+
+ .toggle-checkbox:checked ~ .category_toggle + .toggle-label .arrow {
+    transform: rotate(180deg); /* Rotate the arrow */
+}
+
+.category_group{
+    margin-bottom: 1em;
 }
