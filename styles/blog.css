@@ -172,3 +172,17 @@ li {
     gap: 8px; /* Add space between icon and text */
     padding-bottom: 1.5em;
 }
+
+.sub_menu_timeline svg, .sub_menu_timeline{
+    fill:#333;
+    color: #333;
+    opacity: .7;
+}
+
+.sub_menu_timeline:hover, .sub_menu_category:hover {
+    color: #8abeb7; /* Change text color on hover */
+}
+
+.sub_menu_timeline:hover svg, .sub_menu_category:hover svg {
+    fill: #8abeb7; /* Change icon color on hover */
+}
