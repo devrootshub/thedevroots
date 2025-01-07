@@ -1,0 +1,233 @@
+
+html, body {
+    height: 100%; /* Ensure the page fills the viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange header, content, and footer in a column */
+}
+
+html{
+    line-height: 1.5;
+    letter-spacing: .06em;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    background-color: #fff;
+    color: #222;
+    font-family: Inter, sans-serif;
+}
+
+header, .footer{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    font-family: monospace;
+}
+
+main{
+    flex-grow: 1;
+    display: block;
+}
+
+.header, .footer{
+    background-color: #fafafa;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.in_header, .in_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 760px;
+    max-width: 100%;
+}
+
+.in_menu, .footer_social_menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    list-style: none;
+}
+
+.in_menu a, .in_header a, .in_footer a, .footer_social_menu a{
+    color: #222;
+    text-decoration: none;
+}
+
+.in_menu li, .footer_social_menu li{
+    padding: 0 8px;
+}
+
+a{
+    color:#333;
+}
+
+a:hover{
+    color: #8abeb7;
+}
+
+.rights_reserved{
+    font-size: 0.8em;
+}
+
+
+.mail_icon , .github_icon , .rss_icon, .linkedin_icon , .instagram_icon{
+    fill: #333; /* Set the initial fill color */
+    transition: fill 0.3s ease; /* Smooth transition */
+}
+
+.mail_icon:hover , .github_icon:hover , .rss_icon:hover , .linkedin_icon:hover , .instagram_icon:hover{
+    fill: #8abeb7; /* Change the fill color on hover */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Dedicated */
+
+.post {
+    width: 100%;
+    max-width: 760px;
+    text-align: left;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.post_title {
+    font-size: 2rem;
+    margin: 0 0 20px;
+}
+
+.post_info {
+    margin-top: 10px;
+    font-size: .8rem;
+    line-height: normal;
+    opacity: .6;
+}
+
+.post_info p {
+    display: inline-block; /* Make the p tags inline */
+    margin: 0; /* Remove default margin */
+    margin-right: 10px; /* Add some spacing between them */
+    vertical-align: middle; /* Align them with the SVGs */
+    margin-bottom: 1rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.post_info .small_info {
+    display: inline-block;
+    vertical-align: -.13em;
+    width: 1em;
+    height: 1em;
+}
+
+.post_intro {
+    color: #999;
+    font-style: italic;
+}
+
+.post_content {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2.5em;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 2.5em;
+}
+
+hr{
+    opacity: 0.5;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #8abeb7;
+    margin: 40px;
+    padding: 10px 20px;
+}
+
+/* button styling */
+.pagination{
+    position: fixed;
+    margin-top: 1em;
+  }
+  
+.pag_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center; /*here*/
+}
+
+.pagination a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1em;
+    font-family: monospace;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #8abeb7;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+  
+.pagination a span{
+    position: relative;
+    z-index: 2;
+}
+  
+a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #8abeb7;
+    transition: all .35s;
+}
+  
+.pagination a:hover{
+    color: #fff;
+}
+  
+.pagination a:hover:after{
+    width: 100%;
+}
