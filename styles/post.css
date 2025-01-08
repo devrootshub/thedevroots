@@ -180,8 +180,38 @@ blockquote {
     padding: 10px 20px;
 }
 
+/* callout */
+.callout {
+    margin:auto;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding: 10px 20px;
+    background-color: rgb(138, 190, 183, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* border: 1px solid #ddd; */
+}
+
+.icon svg {
+    color: #8abeb7;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Optional for circular icons */
+}
+
+.text p {
+    margin: 0;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
 /* button styling */
 .pagination{
+    align-items: center;
     position: fixed;
     margin-top: 1em;
   }
