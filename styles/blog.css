@@ -208,7 +208,7 @@ li {
     padding-bottom: 1.5em;
 }
 
-.sub_menu_timeline svg, .sub_menu_timeline{
+.sub_menu_timeline svg, .sub_menu_timeline, sub_menu_category svg, .sub_menu_category {
     fill: var(--svg-fill);
     color: var(--link-color);
     opacity: .9;
